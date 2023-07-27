@@ -141,6 +141,7 @@ public class MonopolyApp extends Player
             
             if (currentSpace==30)//if the jailCondition that is returned from the above method is true, then the player is sent back to jail
             {
+                dataSet[0][30] =dataSet[0][30]+1;
                 goToJail(currentCardName);
             }
             if(currentSpace>=40) //resetting the currentSpace everytime that Go is passed, so that the dimmed array for the gameBoard is valid and can track accurately
